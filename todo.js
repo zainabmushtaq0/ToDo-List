@@ -19,8 +19,11 @@ btn.addEventListener("click", ()=>{
     checkbox.type="checkbox";
     lis.innerText=input.value;
     let icon=document.createElement("i");
-    icon.innerHTML=`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-trash"></i>`;
+    // icon.innerHTML=`&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="fa-solid fa-trash"></i>`;
+    icon.innerHTML=`&nbsp;&nbsp;<i class="fa-solid fa-trash"></i>`;
     // lis.innerHTML='<i class="fa-solid fa-trash"></i>';
+icon.style.position="absolute";
+icon.style.left="250px";
     let ulist=document.querySelector("#ulist");
     ulist.style.display="block";
 ulist.appendChild(lis);
